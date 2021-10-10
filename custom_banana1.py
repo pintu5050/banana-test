@@ -162,7 +162,7 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # Conver BGR to RGB
 # define the model
 rcnn = MaskRCNN(mode='inference', model_dir='./', config = CustomConfig())
 # load trained model weights
-rcnn.load_weights('Banana_test1.h5', by_name=True)
+rcnn.load_weights('Banana_test2.h5', by_name=True)
 
 results = rcnn.detect([img], verbose=0)
 
